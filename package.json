@@ -1,0 +1,35 @@
+{
+  "name": "wrapped-keys-nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "npx @dotenvx/dotenvx run -- mocha test/**/*.spec.ts",
+    "test:solana": "npx @dotenvx/dotenvx run -- mocha test/**/solanaTransactions.spec.ts"
+  },
+  "dependencies": {
+    "@dotenvx/dotenvx": "^0.44.1",
+    "@lit-protocol/auth-browser": "^7.0.0-alpha.9",
+    "@lit-protocol/auth-helpers": "^7.0.0-alpha.9",
+    "@lit-protocol/constants": "^7.0.0-alpha.9",
+    "@lit-protocol/contracts-sdk": "^7.0.0-alpha.9",
+    "@lit-protocol/lit-auth-client": "^7.0.0-alpha.9",
+    "@lit-protocol/lit-node-client": "^7.0.0-alpha.9",
+    "@lit-protocol/wrapped-keys": "^7.0.0-alpha.9",
+    "ethers": "v5"
+  },
+  "devDependencies": {
+    "@solana/web3.js": "1.95.3",
+    "@types/chai": "^4.3.16",
+    "@types/chai-json-schema": "^1.4.10",
+    "@types/mocha": "^10.0.6",
+    "bs58": "^5.0.0",
+    "chai": "4.5.0",
+    "chai-json-schema": "^1.5.1",
+    "mocha": "^10.4.0",
+    "tsc": "^2.0.4",
+    "tsx": "^4.12.0",
+    "tweetnacl": "^1.0.3",
+    "typescript": "^5.4.5"
+  }
+}
